@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@media print {
+  .print\:hidden {
+    display: none !important;
+  }
+  
+  header, .mb-12, .lg:col-span-1, .sidebar {
+    display: none !important;
+  }
+  
+  .lg:col-span-2 {
+    width: 100% !important;
+    grid-column: span 3 / span 3 !important;
+  }
+  
+  body {
+    background: white !important;
+  }
+  
+  .bg-white {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
